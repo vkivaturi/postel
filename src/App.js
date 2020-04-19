@@ -1,24 +1,94 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GJobs from './component/GJobs';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar bg="dark" variant="primary" expand="lg">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <i class="material-icons" style={{ color: "green", fontSize: "25px" }}>language</i>
+        <NavDropdown title="My language" id="basic-nav-dropdown" >
+          <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Hindi</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Telugu</NavDropdown.Item>
+        </NavDropdown>
+        <select class="custom-select custom-select-sm">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </Navbar>
+
+
+      <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            Start1
+            <GJobs />
+          </Route>
+          <Route path="/users">
+            Start2
+            <GJobs />
+          </Route>
+          <Route path="/">
+            Start3
+            <GJobs />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+
+
+
+      <div class="row">
+        <div class="col" >
+        </div>
+        <div class="col">
+          <div class="card card-block">
+            <GJobs />
+          </div>
+        </div>
+        <div class="col align-self-end">
+        </div>
+      </div>
+
     </div>
   );
 }
