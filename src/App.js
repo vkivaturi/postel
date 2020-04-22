@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GJobs from './component/GJobs';
+import Landing from './component/Landing';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -42,42 +44,12 @@ function App() {
 
       <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            Start1
-            <GJobs />
-          </Route>
-          <Route path="/users">
-            Start2
-            <GJobs />
-          </Route>
-          <Route path="/">
-            Start3
-            <GJobs />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-
-
-
-      <div class="row">
+          <Route path="/gjobs">
+          <div class="row">
         <div class="col" >
         </div>
         <div class="col">
@@ -88,7 +60,16 @@ function App() {
         <div class="col align-self-end">
         </div>
       </div>
-
+          </Route>
+          <Route path="/about">
+            About Us
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
     </div>
   );
 }
