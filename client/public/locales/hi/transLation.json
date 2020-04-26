@@ -1,3 +1,25 @@
 {
-    "message1" : "Welcome in Hindi"
+    "NavItem1" : "सरकारी नौकरियों",
+    "NavItem2" : "यह क्या है?",
+    "years" : "वर्षों",
+    "Check details and apply" : "विवरण",
+    "Apply before" : "आवेदन की तिथि",
+
+    "Bangalore" : "बैंगलोर",
+    "Chennai" : "चेन्नई",
+    "Chittoor" : "चित्तूर",
+    "Hyderabad" : "हैदराबाद",
+    "Kolkata" : "कोलकाता",
+    "Mumbai" : "मुंबई",
+    "New Delhi" : "नई दिल्ली",
+
+    "Andhra Pradesh" : "आंध्र प्रदेश",
+    "Delhi" : "दिल्ली",
+    "Karnataka" : "कर्नाटक",
+    "Maharashtra" : "महाराष्ट्र",
+    "Tamil Nadu" : "तमिलनाडु",
+    "Telangana" : "तेलंगाना",
+    "West Bengal" : "पश्चिम बंगाल"
+    
+
 }

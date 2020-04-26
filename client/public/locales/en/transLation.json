@@ -1,3 +1,25 @@
 {
-    "message1" : "Welcome in English"
+    "NavItem1" : "Government Jobs",
+    "NavItem2" : "What is this?",
+    "years" : "Years",
+    "Check details and apply" : "Check details and apply",
+    "Apply before" : "Apply before",
+
+    "Bangalore" : "Bangalore",
+    "Chennai" : "Chennai",
+    "Chittoor" : "Chittoor",
+    "Delhi" : "Delhi",
+    "Hyderabad" : "Hyderabad",
+    "Kolkata" : "Kolkata",
+    "Mumbai" : "Mumbai",
+
+    "Andhra Pradesh" : "Andhra Pradesh",
+    "Karnataka" : "Karnataka",
+    "Maharashtra" : "Maharashtra",
+    "New Delhi" : "New Delhi",
+    "Tamil Nadu" : "Tamil Nadu",
+    "Telangana" : "Telangana",
+    "West Bengal" : "West Bengal"
+    
+
 }

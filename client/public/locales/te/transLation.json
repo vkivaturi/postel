@@ -1,3 +1,25 @@
 {
-    "message1" : "Welcome in Telugu"
+    "NavItem1" : "ప్రభుత్వ ఉద్యోగాలు",
+    "NavItem2" : "ఇది ఏమిటి?",
+    "years" : "సంవత్సరములు",
+    "Check details and apply" : "వివరాలు",
+    "Apply before" : "తేదీని వర్తించండి",
+
+    "Bangalore" : "బెంగుళూర్",
+    "Chennai" : "చెన్నై",
+    "Chittoor" : "చిత్తూరు",
+    "Delhi" : "ఢిల్లీ",
+    "Hyderabad" : "హైదరాబాద్",
+    "Kolkata" : "కోలకతా",
+    "Mumbai" : "ముంబై",
+
+    "Andhra Pradesh" : "ఆంధ్రప్రదేశ్",
+    "Karnataka" : "కర్ణాటక",
+    "Maharashtra" : "మహారాష్ట్ర",
+    "New Delhi" : "న్యూఢిల్లీ",
+    "Tamil Nadu" : "తమిళనాడు",
+    "Telangana" : "తెలంగాణ",
+    "West Bengal" : "పశ్చిమ బెంగాల్"
+    
+
 }
