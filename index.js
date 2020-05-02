@@ -11,13 +11,22 @@ const options = { timeZone: "Asia/Calcutta", month: "short", day: "numeric", hou
 const initialTime = "---";
 const status_list = ["0", "1", "2", "3"];
 
+const default_count = 10;
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 
-app.get('/api/categories', function (req, res) {
+app.get('/api/jobs/latest', function (req, res) {
 
-  dbqueries.allCategoriesQuery((err, rows) => {
+  dbqueries.latestJobs(default_count, (err, rows) => {
+    res.send(rows);
+  });
+})
+
+app.get('/api/jobs/organization/:org_id/designation/:position_id/location/:state_id/offset/:offset', function (req, res) {
+
+  dbqueries.filteredJobs(req.params, (err, rows) => {
     res.send(rows);
   });
 })

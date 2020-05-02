@@ -1,29 +1,51 @@
 var sqlite3 = require('sqlite3').verbose();
-var file = 'essentials.db';
+var file = 'postel_jobs.db';
 var db = new sqlite3.Database(file);
 
 const status_list = ["0", "1", "2", "3"];
 
-exports.allItemsQuery = function (callback) {
+exports.latestJobs = function (count, callback) {
 
-    db.all("SELECT store_id, item_code, category_code, name, status, last_updated FROM item_states", function(err, rows) {
+    var sql = "select rowid, org_id, position_id, specialization_id, experience, website, " + 
+                        "state_id, city, last_date, create_date, count_views, count_actions from job " +
+                        "order by create_date desc limit " + count;
+
+    db.all(sql, function (err, rows) {
         callback(err, rows);
     });
 };
 
+exports.filteredJobs = function (filters, callback) {
 
-exports.allCategoriesQuery = function (callback) {
+    var filter_sql = "";
 
-    db.all("SELECT category_code, name, status FROM item_category", function(err, rows) {
-        callback(err, rows);
-    });
-};
+    if (filters.org_id !== "all"){
+        filter_sql =  " WHERE ";
+        filter_sql =  filter_sql + "org_id in (" + filters.org_id + ") ";
+    }
 
-exports.updateItem = function (item, callback) {
+    if (filters.position_id !== "all"){
+        //Check if earlier filters are already applied
+        filter_sql =  (filter_sql == "") ? " WHERE ": (filter_sql + " AND ");    
+        //Create filter string
+        filter_sql =  filter_sql + "position_id in (" + filters.position_id + ") ";
+    }
 
-    var sql = 'UPDATE item_states set status = "' + item.status + '", last_updated = "' + item.last_updated + '" where item_code = "' + item.item_code + '"';
+    if (filters.state_id !== "all"){
+        //Check if earlier filters are already applied
+        filter_sql =  (filter_sql == "") ? " WHERE ": (filter_sql + " AND ");    
+        //Create filter string
+        filter_sql =  filter_sql + "state_id in (" + filters.state_id + ") ";
+    }
 
-    db.all(sql, function(err, rows) {
+    var sql = "select rowid, org_id, position_id, specialization_id, experience, website, " + 
+                        "state_id, city, last_date, create_date, count_views, count_actions from job " 
+                        + filter_sql +
+                        "order by create_date desc limit 10 offset " + filters.offset;
+
+    console.log(sql);
+
+    db.all(sql, function (err, rows) {
         callback(err, rows);
     });
 };
