@@ -1,9 +1,17 @@
 {
     "NavItem1" : "Government Jobs",
     "NavItem2" : "What is this?",
+    "NavItem3" : "College admissions",
     "years" : "Years",
-    "Check details and apply" : "Check details and apply",
+    "Check details and apply" : "Check details",
     "Apply before" : "Apply before",
+    "Experience" : "Experience",
+    "Location" : "Location",
+    "Organisation" : "Organisation",
+    "Designation" : "Designation",
+
+    "Manager" : "",
+
 
     "Bangalore" : "Bangalore",
     "Chennai" : "Chennai",
@@ -12,8 +20,10 @@
     "Hyderabad" : "Hyderabad",
     "Kolkata" : "Kolkata",
     "Mumbai" : "Mumbai",
+    "Patna" : "Patna",
 
     "Andhra Pradesh" : "Andhra Pradesh",
+    "Bihar" : "Bihar",
     "Karnataka" : "Karnataka",
     "Maharashtra" : "Maharashtra",
     "New Delhi" : "New Delhi",

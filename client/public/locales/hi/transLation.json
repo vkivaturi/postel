@@ -1,9 +1,15 @@
 {
     "NavItem1" : "सरकारी नौकरियों",
     "NavItem2" : "यह क्या है?",
+    "NavItem3" : "कॉलेज में प्रवेश",
     "years" : "वर्षों",
     "Check details and apply" : "विवरण",
     "Apply before" : "आवेदन की तिथि",
+    "Experience" : "अनुभव",
+    "Location" : "स्थान",
+    "Organisation" : "संगठन",
+    "Designation" : "पद",
+
 
     "Bangalore" : "बैंगलोर",
     "Chennai" : "चेन्नई",
@@ -12,14 +18,14 @@
     "Kolkata" : "कोलकाता",
     "Mumbai" : "मुंबई",
     "New Delhi" : "नई दिल्ली",
+    "Patna" : "पटना",
 
     "Andhra Pradesh" : "आंध्र प्रदेश",
+    "Bihar" : "बिहार",
     "Delhi" : "दिल्ली",
     "Karnataka" : "कर्नाटक",
     "Maharashtra" : "महाराष्ट्र",
     "Tamil Nadu" : "तमिलनाडु",
     "Telangana" : "तेलंगाना",
     "West Bengal" : "पश्चिम बंगाल"
-    
-
 }

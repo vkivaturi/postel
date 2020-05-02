@@ -1,9 +1,14 @@
 {
     "NavItem1" : "ప్రభుత్వ ఉద్యోగాలు",
     "NavItem2" : "ఇది ఏమిటి?",
+    "NavItem3" : "కళాశాల ప్రవేశాలు",
     "years" : "సంవత్సరములు",
     "Check details and apply" : "వివరాలు",
     "Apply before" : "తేదీని వర్తించండి",
+    "Experience" : "అనుభవం",
+    "Location" : "స్థానం",
+    "Organisation" : "సంస్థ",
+    "Designation" : "హోదా",
 
     "Bangalore" : "బెంగుళూర్",
     "Chennai" : "చెన్నై",
@@ -12,8 +17,10 @@
     "Hyderabad" : "హైదరాబాద్",
     "Kolkata" : "కోలకతా",
     "Mumbai" : "ముంబై",
+    "Patna" : "పాట్నా",
 
     "Andhra Pradesh" : "ఆంధ్రప్రదేశ్",
+    "Bihar" : "బీహార్",
     "Karnataka" : "కర్ణాటక",
     "Maharashtra" : "మహారాష్ట్ర",
     "New Delhi" : "న్యూఢిల్లీ",

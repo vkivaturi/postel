@@ -12,7 +12,7 @@ const GJobs = () => {
     posts_gjobs = [];
 
     var contentLoc = {
-        website: "http://careers.nisg.org/job-listings-Senior-Manager-IEC-Campaign-UIDAI-NISG-National-Institute-for-Smart-Government-Delhi-10-to-20-years-080420001842?xp=1", image: "https://uidai.gov.in/images/logo/aadhaar_english_logo.svg", organization: "Unique Identification Authority of India",
+        website: "http://careers.nisg.org/job-listings-Senior-Manager-IEC-Campaign-UIDAI-NISG-National-Institute-for-Smart-Government-Delhi-10-to-20-years-080420001842?xp=1", organization: "Unique Identification Authority of India",
         position: "SENIOR MANAGER IEC CAMPAIGN – UIDAI", experience: "10 - 20", salary: "NA", location_state: "Delhi",
         location_place: "New Delhi", count_vacancies: "1"
     };
@@ -23,7 +23,7 @@ const GJobs = () => {
     });
 
     contentLoc = {
-        website: "http://careers.nisg.org/job-listings-Senior-Manager-IT-Goods-Service-Tax-Network-GSTN-New-Delhi-NISG-National-Institute-for-Smart-Government-Delhi-8-to-13-years-150420005659?xp=1", image: "https://www.gstn.org.in/wp-content/uploads/2020/02/cropped-logo_tm_with_text.png", organization: "Unique Identification Authority of India",
+        website: "http://careers.nisg.org/job-listings-Senior-Manager-IT-Goods-Service-Tax-Network-GSTN-New-Delhi-NISG-National-Institute-for-Smart-Government-Delhi-8-to-13-years-150420005659?xp=1", organization: "Goods and Services Tax Network",
         position: "SENIOR MANAGER IT", experience: "08 - 13", salary: "NA", location_state: "Delhi",
         location_place: "New Delhi", count_vacancies: "1"
     };
@@ -34,7 +34,7 @@ const GJobs = () => {
     });
 
     contentLoc = {
-        website: "http://www.delhimetrorail.com/CareerDocuments/Advt.No.53-GM-S&T,Patna.pdf", image: "http://www.delhimetrorail.com/images/logo.jpg", organization: "Unique Identification Authority of India",
+        website: "http://www.delhimetrorail.com/CareerDocuments/Advt.No.53-GM-S&T,Patna.pdf", organization: "Delhi Metro Rail Corporation",
         position: "General Managaer (S&T)", experience: "58 - 62", salary: "NA", location_state: "Bihar",
         location_place: "Patna", count_vacancies: "1"
     };
@@ -45,8 +45,8 @@ const GJobs = () => {
     });
 
     contentLoc = {
-        website: "http://www.iiits.ac.in/iiits-content/uploads/2019/10/IIIT-SriCity-Recruitment-AssistantAssociate-Professor-Oct2019-Instructions-FV.pdf", image: "http://www.iiits.ac.in/iiits-content/uploads/2020/03/logo12-new-1.png", organization: "Unique Identification Authority of India",
-        position: "Assistant and Associate Professor", experience: "5 - 15", salary: "NA", location_state: "Andhra",
+        website: "http://www.iiits.ac.in/iiits-content/uploads/2019/10/IIIT-SriCity-Recruitment-AssistantAssociate-Professor-Oct2019-Instructions-FV.pdf", organization: "Unique Identification Authority of India",
+        position: "Assistant and Associate Professor", experience: "5 - 15", salary: "NA", location_state: "Andhra Pradesh",
         location_place: "Chittoor", count_vacancies: "1"
     };
 
@@ -56,52 +56,72 @@ const GJobs = () => {
     });
 
     return (
-        <div class="container">
+        <div>
             <br></br>
             <div class="row">
+                <div class="col"></div>
                 <div class="col">
-
+                    <span >{t('Organisation')}</span>
+                    <br></br>
+                    <select class="custom-select border-success text-dark" id="inputGroupSelect01" style={{ width: '15rem' }} >
+                        <option selected value="1">Delhi Metro Rail Corporation</option>
+                        <option value="2">Goods and Services Tax Network</option>
+                        <option value="3">IIIT</option>
+                        <option value="4">UIDAI</option>
+                    </select>
+                    <br></br><br></br>
+                    <span>{t('Designation')}</span>
+                    <br></br>
+                    <select class="custom-select border-success text-dark" id="inputGroupSelect02" style={{ width: '15rem' }} >
+                        <option selected value="1">Manager</option>
+                        <option value="2">Professor</option>
+                    </select>
+                    <br></br><br></br>
+                    <span>{t('Location')}</span>
+                    <br></br>
+                    <select class="custom-select border-success text-dark" id="inputGroupSelect03" style={{ width: '15rem' }} >
+                        <option selected value="1">Delhi</option>
+                        <option value="2">Andhra Pradesh</option>
+                        <option value="3">Bihar</option>
+                    </select>
                 </div>
-                <div class="col-md-14">
-                    <div class="card-columns align-center">
-                        {posts_gjobs.map((gjob, gindex) => (<div>
-                            <div class="card mb-3 border-dark" style={{ width: '25rem' }}>
-                                <img class="card-img-top" style={{ width: "400px", height: "75px" }} src={gjob.content.image} alt="" />
-                                <div class="card-body">
-                                    <h6>{gjob.content.position}</h6>
-                                    <div class="row">
-                                        <div class="col">Experience</div>
-                                        <div class="col">{gjob.content.experience}  {t('years')}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">Location</div>
-                                        <div class="col">{t(gjob.content.location_place)}, {t(gjob.content.location_state)} </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">{t('Apply before')}</div>
-                                        <div class="col"><b>{gjob.last_date}</b></div>
-                                    </div>
 
-                                    <a href={gjob.content.website} class="btn btn-primary btn-block" target="_blank">
-                                        {t('Check details and apply')}</a>
-                                    <hr></hr>
-                                    <div class="row">
-                                        <div class="col">
-                                            <i class="material-icons" style={{ color: "orange", fontSize: "30px" }}>remove_red_eye</i>
-                                            <sup>2.2k</sup>
-                                        </div>
-                                        <div class="col">
-                                            <i class="material-icons" style={{ color: "green", fontSize: "30px" }}>favorite</i>
-                                            <sup>2.2k</sup>
-                                        </div>
+                <div class="col">
+                    <h4>{t('NavItem1')}</h4>
+                    {posts_gjobs.map((gjob, gindex) => (<div>
+                        <div class="card mb-3 border-dark" style={{ width: '45rem' }}>
+                            <div class="card-body text-dark">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>{gjob.content.position}</h6>
+                                    </div>
+                                    <div class="col">
+                                        <a href={gjob.content.website} class="btn btn-warning" target="_blank">
+                                            {t('Check details and apply')}</a>
+                                    </div>
+                                </div>
+                                <h6>{gjob.content.organization}</h6>
+                                {t('Experience')} {": "}
+                                {gjob.content.experience}  {t('years')} {" , "}
+                                {t('Location')} {": "}
+                                {t(gjob.content.location_place)}, {t(gjob.content.location_state)} {" , "}
+                                {t('Apply before')} {": "}
+                                <b>{gjob.last_date}</b>
+                                <div class="row">
+                                    <div class="col-md-12 text-secondary">
+                                        {t('This job is searched')} {" "}
+                                        {gjob.count_views}  {t('times')} {" and details viewed "}
+                                        {gjob.count_actions} {t('times')}
                                     </div>
                                 </div>
                             </div>
-                        </div>))},
+                        </div>
+                    </div>
+                    ))},
 
-            </div>
 
                 </div>
+                <div class="col"></div>
 
             </div>
 

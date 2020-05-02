@@ -31,7 +31,8 @@ const App = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="gjobs"><span class="text-white" style={{fontSize: "20px" }}>{t('NavItem1')} |</span></Nav.Link>
-                        <Nav.Link href="link"><span class="text-white" style={{fontSize: "20px" }}>{t('NavItem2')}?</span></Nav.Link>
+                        <Nav.Link href="gjobs"><span class="text-white" style={{fontSize: "20px" }}>{t('NavItem3')} |</span></Nav.Link>
+                        <Nav.Link href="link"><span class="text-white" style={{fontSize: "20px" }}>{t('NavItem2')}</span></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <select class="custom-select bg-success text-white" id="inputGroupSelect02" style={{ width: '6rem' }} onChange={(e) => changeLanguage(e.target.value)} >
