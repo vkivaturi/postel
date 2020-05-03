@@ -10,8 +10,16 @@
     "Organisation" : "Organisation",
     "Designation" : "Designation",
 
-    "Manager" : "",
+    "ASC-PROF" : "Assistant Professor",
+    "DEVLPR" : "Software Developer",
+    "MNGR" : "Manager",
+    "PROF" : "Professor",
+    "SR-MNGR" : "Senior Manager",
 
+    "DMRC" : "Delhi Metro Rail Corporation (DMRC)",
+    "IIITHyd" : "IIIT Hyderabad",
+    "NIC" : "National Infomatics Center (NIC)",
+    "UIDAI" : "Unique Identification Authority of India (UIDAI)",
 
     "Bangalore" : "Bangalore",
     "Chennai" : "Chennai",
@@ -22,14 +30,14 @@
     "Mumbai" : "Mumbai",
     "Patna" : "Patna",
 
-    "Andhra Pradesh" : "Andhra Pradesh",
-    "Bihar" : "Bihar",
-    "Karnataka" : "Karnataka",
-    "Maharashtra" : "Maharashtra",
-    "New Delhi" : "New Delhi",
-    "Tamil Nadu" : "Tamil Nadu",
-    "Telangana" : "Telangana",
-    "West Bengal" : "West Bengal"
+    "AP" : "Andhra Pradesh",
+    "BR" : "Bihar",
+    "KA" : "Karnataka",
+    "MH" : "Maharashtra",
+    "DL" : "New Delhi",
+    "TN" : "Tamil Nadu",
+    "TS" : "Telangana",
+    "WB" : "West Bengal"
     
 
 }

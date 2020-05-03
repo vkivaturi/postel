@@ -10,23 +10,34 @@
     "Organisation" : "సంస్థ",
     "Designation" : "హోదా",
 
+    "ASC-PROF" : "Assistant Professor",
+    "DEVLPR" : "Software Developer",
+    "MNGR" : "Manager",
+    "PROF" : "Professor",
+    "SR-MNGR" : "Senior Manager",
+
+    "DMRC" : "Delhi Metro Rail Corporation (DMRC)",
+    "IIITHyd" : "IIIT Hyderabad",
+    "NIC" : "National Infomatics Center (NIC)",
+    "UIDAI" : "Unique Identification Authority of India (UIDAI)",
+
     "Bangalore" : "బెంగుళూర్",
     "Chennai" : "చెన్నై",
     "Chittoor" : "చిత్తూరు",
-    "Delhi" : "ఢిల్లీ",
     "Hyderabad" : "హైదరాబాద్",
     "Kolkata" : "కోలకతా",
     "Mumbai" : "ముంబై",
+    "New Delhi" : "ఢిల్లీ",
     "Patna" : "పాట్నా",
 
-    "Andhra Pradesh" : "ఆంధ్రప్రదేశ్",
-    "Bihar" : "బీహార్",
-    "Karnataka" : "కర్ణాటక",
-    "Maharashtra" : "మహారాష్ట్ర",
-    "New Delhi" : "న్యూఢిల్లీ",
-    "Tamil Nadu" : "తమిళనాడు",
-    "Telangana" : "తెలంగాణ",
-    "West Bengal" : "పశ్చిమ బెంగాల్"
+    "AP" : "ఆంధ్రప్రదేశ్",
+    "BR" : "బీహార్",
+    "KA" : "కర్ణాటక",
+    "MH" : "మహారాష్ట్ర",
+    "DL" : "న్యూఢిల్లీ",
+    "TN" : "తమిళనాడు",
+    "TS" : "తెలంగాణ",
+    "WB" : "పశ్చిమ బెంగాల్"
     
 
 }
